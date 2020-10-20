@@ -516,12 +516,8 @@ a {
     }
 
     
-    @media screen and (max-width:950px){
-        .grid-cambio.active {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+ 
+
 /* <--------------- Inizio swiper -----------------> */
 
  .swiper-container {
@@ -647,6 +643,7 @@ footer h2{
 }
 
 .gridfoto img:hover{
+    transition: 0.4s;
     filter: brightness(0.7);
 }
 
@@ -698,12 +695,28 @@ footer h2{
     grid-area: 1 / 2 / 2 / 3;
     padding: 50px 100px;
 }
+
+@media screen and (max-width:950px){
+    .persona.grid-cambio.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .div-immagine{
+        width: 350px;
+    }
+    .div-presentazione{
+        padding: 0 50px;
+        margin: 0;
+    }
+
+}
 .firma{
     font-family: 'Dancing Script', cursive;
     font-family: 'Great Vibes', cursive;   
     text-transform: capitalize;
     font-size: 45px;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: right;
     letter-spacing: 4px;
 }
